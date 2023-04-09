@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap');
+
+*,
+::before,
+::after
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container 
+{
+    width: 30%;
+    height: auto;
+    text-align: center;
+    margin: 20% auto 0;
+    background-color: #252525;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 700px) {
+   .container
+   {
+    width: 70%;
+   }
+  }
+
+.container .text 
+{
+    width: 100%;
+    height:min(120px,120px);
+    overflow: hidden;
+    overflow-y: auto;
+    padding: 10px;
+}
+
+.container .text p 
+{
+    color: #FFFFFF;
+    padding: 10px;
+    text-align: left;
+    font-size: 1.2em;
+    letter-spacing: 2px;
+    font-weight: 400;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.container button 
+{
+    display: inline-block;
+    padding: 15px 30px;
+    border-radius: 10px;
+    border: 1px solid #333333;
+    text-transform: capitalize;
+    outline: none;
+    text-align: center;
+    cursor: pointer;
+    font-weight: 700;
+    margin: 10px auto 0;
+    transition: background-color  .2s ease-in-out;
+
+}
+.container button:active
+{
+    background-color: #333333;
+    color: #FFFFFF;
+    transition: background-color  .2s ease-in-out;
+}
